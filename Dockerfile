@@ -16,5 +16,6 @@ COPY unbound.conf /etc/unbound/unbound.conf
 RUN unbound-checkconf
 
 EXPOSE 53
+EXPOSE 53/udp
 
 CMD ["unbound"]

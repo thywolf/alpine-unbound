@@ -9,6 +9,7 @@ FROM alpine:latest
 
 MAINTAINER Chris Kruszynski <thywolf@gmail.com>
 
+RUN apk add --no-cache --update ca-certificates
 RUN apk add --no-cache --update unbound
 
 COPY unbound.conf /etc/unbound/unbound.conf
